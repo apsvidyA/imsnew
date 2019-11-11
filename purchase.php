@@ -47,8 +47,19 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
 body {
   font-family: "Lato", sans-serif;
+  background-image: url("3.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	  
 }
 
 .sidenav {
@@ -90,6 +101,17 @@ body {
   padding: 16px;
 }
 
+.pro {
+    font-weight: bold;
+    font-size: 33px;
+    position: absolute;
+    
+    left: 38.1%; 
+    color: white;
+    font-family: 'Montserrat',cursive;
+    
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -100,7 +122,7 @@ body {
     overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
+
 .topnav a {
   float: left;
   color: #f2f2f2;
@@ -110,19 +132,19 @@ body {
   font-size: 17px;
 }
 
-/* Change the color of links on hover */
+
 .topnav a:hover {
   background-color: #ddd;
   color: black;
 }
 
-/* Add a color to the active/current link */
+
 .topnav a.active {
   background-color: #4CAF50;
   color: white;
 }
 
-/* Right-aligned section inside the top navigation */
+
 .topnav-right {
   float: right;
 }
@@ -141,6 +163,8 @@ td,th{
 }
 
 tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:nth-child(odd){background-color: #ffffff;}
 
 tr:hover {background-color: #ddd;}
 
@@ -165,18 +189,16 @@ td{
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.php">Current Statistics</a>
+  <a href="current.php">Current Statistics</a>
   <a href="dept.php">Departmental Statistics</a>
   <a href="purchase.php">Purchase</a>
   <a href="sales.php">Sales</a>
-  <a href="about.html">About</a>
-  <a href="index.php?logout='1'">Logout</a>
+  
+  <a href="current.php?logout='1'">Logout</a>
 </div>
 
 <div id="main">
   
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-
 
 <script>
 function openNav() {
@@ -190,6 +212,9 @@ function closeNav() {
 }
 </script>
 <div class="topnav">
+<span style="font-size:30px;cursor:pointer;color:#ffffff;" onclick="openNav()">&#9776; </span>
+<span class="pro">PURCHASE DETAILS</span>
+
   <div class="topnav-right">
     <a href="pur.php">Add invoice</a>
   </div>

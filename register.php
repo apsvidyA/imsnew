@@ -36,7 +36,7 @@
    // Attempt insert query execution
    $sql = "INSERT INTO user_login (username, email, password) VALUES ('$username', '$email', '$password')";
    if(mysqli_query($db, $sql)){
-		echo "\n<script>alert('Records added successfully.');</script>";
+		/* echo "\n<script>alert('Records added successfully.');</script>"; */
 		header('location:Login.php');
         
    } else{

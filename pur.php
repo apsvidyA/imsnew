@@ -125,9 +125,11 @@ if(isset($_GET['edited'])){
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="iconic.css">
 <style>
 body {
   font-family: "Lato", sans-serif;
+  
 }
 
 .sidenav {
@@ -179,17 +181,17 @@ body {
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.php">Current Statistics</a>
+  <a href="current.php">Current Statistics</a>
   <a href="dept.php">Departmental Statistics</a>
   <a href="purchase.php">Purchase</a>
   <a href="sales.php">Sales</a>
-  <a href="about.html">About</a>
-  <a href="index.php?logout='1'">Logout</a>
+  
+  <a href="current.php?logout='1'">Logout</a>
 </div>
 
 <div id="main">
   
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+  <span style="font-size:30px;cursor:pointer;color:#ffffff;" onclick="openNav()">&#9776; </span>
 </div>
 
 <script>

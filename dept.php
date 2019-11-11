@@ -47,8 +47,18 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
 body {
   font-family: "Lato", sans-serif;
+  background-image: url("3.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 .sidenav {
@@ -155,12 +165,12 @@ td{
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.php">Current Statistics</a>
+  <a href="current.php">Current Statistics</a>
   <a href="dept.php">Departmental Statistics</a>
   <a href="purchase.php">Purchase</a>
   <a href="sales.php">Sales</a>
-  <a href="about.html">About</a>
-  <a href="index.php?logout='1'">Logout</a>
+  
+  <a href="current.php?logout='1'">Logout</a>
 </div>
 
 <div id="main">
@@ -181,7 +191,7 @@ function closeNav() {
 </script>
 <div class="search">
 <form>
-    <input type="text" placeholder="Search..."  name="department" required>
+    <input type="text" placeholder="Department..."  name="department" required>
     <input type="button" value="Search" name="dept_srh">
 </form>
 </div>
